@@ -1,0 +1,18 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=1564
+
+This version is an update of the version shipped with Vim 6.X and 7.X. I have only tested it with Vim 7.X.
+
+New version allows highlighting of "space errors" in comments (e.g. trailing spaces and/or tabs). Thanks to Benjamin Krill for this nice feature. To turn it on, add the following line to your vimrc:
+
+let forth_space_errors=1
+
+If you have switched it on, you can turn off highlighting of trailing spaces in comments by setting forth_no_trail_space_error in your vimrc. If you do not want the highlighting of a tabulator following a space in comments, you can turn this off by setting forth_no_tab_space_error.
+
+
+Comment for the Initial upload:
+
+Thomas E. Vaughan send me a patch, to allow words end with a parenthesis. Such a trailing parenthesis will now no longer start the highlighting for stack comments.
+
+I have also added a fix for a bug in the script, that led to an annoying W18 warning while parsing the script. Bill McCarthy and Ilya Sher found that bug in 2004!
+Shame on me, I thought I had applied that fix *two* years ago to the offical version.
+Welcome to embarrassment city :-\
