@@ -162,7 +162,7 @@ syn keyword forthCond ?DUP-0=-IF AHEAD CS-PICK CS-ROLL CATCH THROW WITHIN
 " iterations
 syn keyword forthLoop BEGIN WHILE REPEAT UNTIL AGAIN
 syn keyword forthLoop ?DO LOOP I J K +DO U+DO -DO U-DO DO +LOOP -LOOP
-syn keyword forthLoop UNLOOP LEAVE ?LEAVE EXIT DONE FOR NEXT
+syn keyword forthLoop UNLOOP LEAVE ?LEAVE EXIT DONE FOR NEXT RECURSE
 
 " new words
 syn match forthClassDef '\<:class\s*[^ \t]\+\>'
