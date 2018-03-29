@@ -180,7 +180,7 @@ syn keyword forthDefine COMPILE-ONLY COMPILE RESTRICT INTERPRET POSTPONE EXECUTE
 syn keyword forthDefine LITERAL CREATE-INTERPRET/COMPILE INTERPRETATION>
 syn keyword forthDefine <INTERPRETATION COMPILATION> <COMPILATION ] LASTXT
 syn keyword forthDefine COMP' POSTPONE, FIND-NAME NAME>INT NAME?INT NAME>COMP
-syn keyword forthDefine NAME>STRING STATE C; CVARIABLE BUFFER:
+syn keyword forthDefine NAME>STRING STATE C; CVARIABLE BUFFER: MARKER
 syn keyword forthDefine , 2, F, C, COMPILE,
 syn match forthDefine "\[IFDEF]"
 syn match forthDefine "\[IFUNDEF]"
