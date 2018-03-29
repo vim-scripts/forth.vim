@@ -132,7 +132,7 @@ syn keyword forthOperators F~REL F~ABS F~
 syn keyword forthOperators 0< 0<= 0<> 0= 0> 0>= < <= <> = > >= U< U<=
 syn keyword forthOperators U> U>= D0< D0<= D0<> D0= D0> D0>= D< D<= D<>
 syn keyword forthOperators D= D> D>= DU< DU<= DU> DU>= WITHIN ?NEGATE
-syn keyword forthOperators ?DNEGATE
+syn keyword forthOperators ?DNEGATE TRUE FALSE
 
 " various words that take an input and do something with it
 syn keyword forthFunction . U. .R
