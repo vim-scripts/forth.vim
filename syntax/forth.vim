@@ -231,6 +231,7 @@ syn keyword forthForth PAD WORDS VIEW VIEW> N>LINK NAME> LINK> L>NAME FORGET
 syn keyword forthForth BODY> ASSERT( ASSERT0( ASSERT1( ASSERT2( ASSERT3( )
 syn keyword forthForth >IN ACCEPT ENVIRONMENT? EVALUATE QUIT SOURCE ACTION-OF
 syn keyword forthForth DEFER! DEFER@ PARSE PARSE-NAME REFILL RESTORE-INPUT
+syn keyword forthForth SAVE-INPUT
 syn region forthForth start=+ABORT"\s+ skip=+\\"+ end=+"+
 
 " vocabularies
