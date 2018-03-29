@@ -199,8 +199,10 @@ syn match forthFloat '\<-\=\d*[.]\=\d\+[DdEe][-+]\d\+\>'
 syn region forthComment start='0 \[if\]' end='\[endif\]' end='\[then\]' contains=forthTodo
 
 " Strings
+" It is technically OK for strings to span multiple lines,
+" but it is still practical to break at EOL to avoid
+" problems with e.g. POSTPONE ."
 syn region forthString start=+\.*\"+ end=+"+ end=+$+
-" XXX
 syn region forthString start=+s\"+ end=+"+ end=+$+
 syn region forthString start=+s\\\"+ end=+"+ end=+$+
 syn region forthString start=+c\"+ end=+"+ end=+$+
