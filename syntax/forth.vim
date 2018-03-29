@@ -223,7 +223,7 @@ syn region forthCharOps start=+."\s+ skip=+\\"+ end=+"+
 " char-number conversion
 syn keyword forthConversion <<# <# # #> #>> #S (NUMBER) (NUMBER?) CONVERT D>F
 syn keyword forthConversion D>S DIGIT DPL F>D HLD HOLD NUMBER S>D SIGN >NUMBER
-syn keyword forthConversion F>S S>F
+syn keyword forthConversion F>S S>F HOLDS
 
 " interpreter, wordbook, compiler
 syn keyword forthForth (LOCAL) BYE COLD ABORT >BODY >NEXT >LINK CFA >VIEW HERE
