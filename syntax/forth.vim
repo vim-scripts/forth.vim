@@ -181,7 +181,7 @@ syn keyword forthDefine LITERAL CREATE-INTERPRET/COMPILE INTERPRETATION>
 syn keyword forthDefine <INTERPRETATION COMPILATION> <COMPILATION ] LASTXT
 syn keyword forthDefine COMP' POSTPONE, FIND-NAME NAME>INT NAME?INT NAME>COMP
 syn keyword forthDefine NAME>STRING STATE C; CVARIABLE BUFFER:
-syn keyword forthDefine , 2, F, C,
+syn keyword forthDefine , 2, F, C, COMPILE,
 syn match forthDefine "\[IFDEF]"
 syn match forthDefine "\[IFUNDEF]"
 syn match forthDefine "\[THEN]"
