@@ -135,7 +135,7 @@ syn keyword forthOperators D= D> D>= DU< DU<= DU> DU>= WITHIN ?NEGATE
 syn keyword forthOperators ?DNEGATE
 
 " various words that take an input and do something with it
-syn keyword forthFunction . U.
+syn keyword forthFunction . U. .R
 
 " stack manipulations
 syn keyword forthStack DROP NIP DUP OVER TUCK SWAP ROT -ROT ?DUP PICK ROLL
