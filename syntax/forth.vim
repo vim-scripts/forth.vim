@@ -176,6 +176,7 @@ syn keyword forthFileWords KEY?-FILE WRITE-FILE WRITE-LINE EMIT-FILE
 syn keyword forthFileWords FLUSH-FILE FILE-STATUS FILE-POSITION
 syn keyword forthFileWords REPOSITION-FILE FILE-SIZE RESIZE-FILE
 syn keyword forthFileWords SLURP-FILE SLURP-FID STDIN STDOUT STDERR
+syn keyword forthFileWords INCLUDE-FILE INCLUDED REQUIRED
 syn keyword forthBlocks OPEN-BLOCKS USE LOAD --> BLOCK-OFFSET
 syn keyword forthBlocks GET-BLOCK-FID BLOCK-POSITION LIST SCR BLOCK
 syn keyword forthBlocks BUFER EMPTY-BUFFERS EMPTY-BUFFER UPDATE UPDATED?
@@ -213,9 +214,9 @@ syn region forthComment start='/\*' end='\*/' contains=forthTodo,forthSpaceError
 
 " Include files
 syn match forthInclude '^INCLUDE\s\+\k\+'
-syn match forthInclude '^require\s\+\k\+'
-syn match forthInclude '^fload\s\+'
-syn match forthInclude '^needs\s\+'
+syn match forthInclude '^REQUIRE\s\+\k\+'
+syn match forthInclude '^FLOAD\s\+'
+syn match forthInclude '^NEEDS\s\+'
 
 " Locals definitions
 syn region forthLocals start='{\s' start='{$' end='\s}' end='^}'
