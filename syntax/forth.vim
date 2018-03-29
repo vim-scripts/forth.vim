@@ -147,7 +147,7 @@ syn keyword forthRstack 4>R 4R> 4R@ 4RDROP
 syn keyword forthFStack FDROP FNIP FDUP FOVER FTUCK FSWAP FROT
 
 " stack pointer manipulations
-syn keyword forthSP SP@ SP! FP@ FP! RP@ RP! LP@ LP!
+syn keyword forthSP SP@ SP! FP@ FP! RP@ RP! LP@ LP! DEPTH
 
 " address operations
 syn keyword forthMemory @ ! +! C@ C! 2@ 2! F@ F! SF@ SF! DF@ DF!
