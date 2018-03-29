@@ -16,7 +16,7 @@
 " for forth.vim).
 
 " Many Thanks to...
-" 
+"
 " 2012-01-07:
 " Thilo Six <T.Six at gmx dot de> send a patch for cpoptions.
 " See the discussion at http://thread.gmane.org/gmane.editors.vim.devel/32151
@@ -134,6 +134,9 @@ syn keyword forthOperators U> U>= D0< D0<= D0<> D0= D0> D0>= D< D<= D<>
 syn keyword forthOperators D= D> D>= DU< DU<= DU> DU>= WITHIN ?NEGATE
 syn keyword forthOperators ?DNEGATE
 
+" various words that take an input and do something with it
+syn keyword forthFunction .
+
 " stack manipulations
 syn keyword forthStack DROP NIP DUP OVER TUCK SWAP ROT -ROT ?DUP PICK ROLL
 syn keyword forthStack 2DROP 2NIP 2DUP 2OVER 2TUCK 2SWAP 2ROT 2-ROT
@@ -247,8 +250,8 @@ syn keyword forthBlocks BLOCK-INCLUDED
 
 " numbers
 syn keyword forthMath DECIMAL HEX BASE
-syn match forthInteger '\<-\=[0-9.]*[0-9.]\+\>'
-syn match forthInteger '\<&-\=[0-9.]*[0-9.]\+\>'
+syn match forthInteger '\<-\=[0-9]\+.\=\>'
+syn match forthInteger '\<&-\=[0-9]\+.\=\>'
 " recognize hex and binary numbers, the '$' and '%' notation is for gforth
 syn match forthInteger '\<\$\x*\x\+\>' " *1* --- dont't mess
 syn match forthInteger '\<\x*\d\x*\>'  " *2* --- this order!
@@ -329,6 +332,7 @@ if version >= 508 || !exists("did_forth_syn_inits")
     HiLink forthLocals Type " nothing else uses type and locals must stand out
     HiLink forthDeprecated Error " if you must, change to Type
     HiLink forthFileMode Function
+    HiLink forthFunction Function
     HiLink forthFileWords Statement
     HiLink forthBlocks Statement
     HiLink forthSpaceError Error
