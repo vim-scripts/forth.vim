@@ -270,6 +270,7 @@ syn region forthComment start='0 \[if\]' end='\[endif\]' end='\[then\]' contains
 syn region forthString start=+\.*\"+ end=+"+ end=+$+
 " XXX
 syn region forthString start=+s\"+ end=+"+ end=+$+
+syn region forthString start=+s\\\"+ end=+"+ end=+$+
 syn region forthString start=+c\"+ end=+"+ end=+$+
 
 " Comments
