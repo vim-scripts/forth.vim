@@ -212,7 +212,7 @@ syn keyword forthAssembler ASSEMBLER CODE END-CODE ;CODE FLUSH-ICACHE C,
 
 " basic character operations
 syn keyword forthCharOps (.) CHAR EXPECT FIND WORD TYPE -TRAILING EMIT KEY
-syn keyword forthCharOps KEY? TIB CR
+syn keyword forthCharOps KEY? TIB CR BL
 " recognize 'char (' or '[char] (' correctly, so it doesn't
 " highlight everything after the paren as a comment till a closing ')'
 syn match forthCharOps '\<char\s\S\s'
