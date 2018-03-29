@@ -1,80 +1,10 @@
 " Vim syntax file
 " Language:    FORTH
-" Maintainer:  Christian V. J. Brüssow <cvjb@cvjb.de>
-" Last Change: Sa 07 Jan 2012 21:30:55 CET
+" Current Maintainer:  Johan Kotlinski <kotlinski@gmail.com>
+" Previous Maintainer:  Christian V. J. Brüssow <cvjb@cvjb.de>
+" Last Change: 2018-03-29
 " Filenames:   *.fs,*.ft
-" URL:	       http://www.cvjb.de/comp/vim/forth.vim
-
-" $Id: forth.vim,v 1.13 2012/01/07 21:31:31 bruessow Exp $
-
-" The list of keywords is incomplete, compared with the offical ANS
-" wordlist. If you use this language, please improve it, and send me
-" the patches.
-"
-" Before sending me patches, please download the newest version of this file
-" from http://www.cvjb.de/comp/vim/forth.vim or http://www.vim.org/ (search
-" for forth.vim).
-
-" Many Thanks to...
-"
-" 2012-01-07:
-" Thilo Six <T.Six at gmx dot de> send a patch for cpoptions.
-" See the discussion at http://thread.gmane.org/gmane.editors.vim.devel/32151
-"
-" 2009-06-28:
-" Josh Grams send a patch to allow the parenthesis comments at the
-" beginning of a line. That patch also fixed a typo in one of the
-" comments.
-"
-" 2008-02-09:
-" Shawn K. Quinn <sjquinn at speakeasy dot net> send a big patch with
-" new words commonly used in Forth programs or defined by GNU Forth.
-"
-" 2007-07-11:
-" Benjamin Krill <ben at codiert dot org> send me a patch
-" to highlight space errors.
-" You can toggle this feature on through setting the
-" flag forth_space_errors in you vimrc. If you have switched it on,
-" you can turn off highlighting of trailing spaces in comments by
-" setting forth_no_trail_space_error in your vimrc. If you do not want
-" the highlighting of a tabulator following a space in comments, you
-" can turn this off by setting forth_no_tab_space_error.
-"
-" 2006-05-25:
-" Bill McCarthy <WJMc@...> and Ilya Sher <ilya-vim@...>
-" Who found a bug in the ccomment line in 2004!!!
-" I'm really very sorry, that it has taken two years to fix that
-" in the offical version of this file. Shame on me.
-" I think my face will be red the next ten years...
-"
-" 2006-05-21:
-" Thomas E. Vaughan <tevaugha at ball dot com> send me a patch
-" for the parenthesis comment word, so words with a trailing
-" parenthesis will not start the highlighting for such comments.
-"
-" 2003-05-10:
-" Andrew Gaul <andrew at gaul.org> send me a patch for
-" forthOperators.
-"
-" 2003-04-03:
-" Ron Aaron <ron at ronware dot org> made updates for an
-" improved Win32Forth support.
-"
-" 2002-04-22:
-" Charles Shattuck <charley at forth dot org> helped me to settle up with the
-" binary and hex number highlighting.
-"
-" 2002-04-20:
-" Charles Shattuck <charley at forth dot org> send me some code for correctly
-" highlighting char and [char] followed by an opening paren. He also added
-" some words for operators, conditionals, and definitions; and added the
-" highlighting for s" and c".
-"
-" 2000-03-28:
-" John Providenza <john at probo dot com> made improvements for the
-" highlighting of strings, and added the code for highlighting hex numbers.
-"
-
+" URL:	       https://github.com/jkotlinski/forth.vim
 
 " For version 5.x: Clear all syntax items
 " For version 6.x: Quit when a syntax file was already loaded
