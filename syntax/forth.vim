@@ -181,7 +181,7 @@ syn keyword forthBlocks OPEN-BLOCKS USE LOAD --> BLOCK-OFFSET
 syn keyword forthBlocks GET-BLOCK-FID BLOCK-POSITION LIST SCR BLOCK
 syn keyword forthBlocks BUFER EMPTY-BUFFERS EMPTY-BUFFER UPDATE UPDATED?
 syn keyword forthBlocks SAVE-BUFFERS SAVE-BUFFER FLUSH THRU +LOAD +THRU
-syn keyword forthBlocks BLOCK-INCLUDED
+syn keyword forthBlocks BLOCK-INCLUDED BLK
 
 " numbers
 syn keyword forthMath DECIMAL HEX BASE
