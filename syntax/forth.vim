@@ -187,6 +187,7 @@ syn keyword forthBlocks BLOCK-INCLUDED BLK
 syn keyword forthMath DECIMAL HEX BASE
 syn match forthInteger '\<-\=[0-9]\+.\=\>'
 syn match forthInteger '\<&-\=[0-9]\+.\=\>'
+syn match forthInteger '\<#-\=[0-9]\+.\=\>'
 " recognize hex and binary numbers, the '$' and '%' notation is for gforth
 syn match forthInteger '\<\$\x*\x\+\>' " *1* --- dont't mess
 syn match forthInteger '\<\x*\d\x*\>'  " *2* --- this order!
