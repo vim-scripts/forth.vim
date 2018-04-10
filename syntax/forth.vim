@@ -193,18 +193,18 @@ syn match forthFloat '\<-\=\d*[.]\=\d\+[DdEe][-+]\d\+\>'
 syn region forthComment start='0 \[if\]' end='\[endif\]' end='\[then\]' contains=forthTodo
 
 " Strings
-syn region forthString start=+\.*\"+ end=+"+ end=+$+
+syn region forthString start=+\.*\"+ end=+"+ end=+$+ contains=@Spell
 " XXX
-syn region forthString start=+s\"+ end=+"+ end=+$+
-syn region forthString start=+s\\\"+ end=+"+ end=+$+
-syn region forthString start=+c\"+ end=+"+ end=+$+
+syn region forthString start=+s\"+ end=+"+ end=+$+ contains=@Spell
+syn region forthString start=+s\\\"+ end=+"+ end=+$+ contains=@Spell
+syn region forthString start=+c\"+ end=+"+ end=+$+ contains=@Spell
 
 " Comments
-syn match forthComment '\\\s.*$' contains=forthTodo,forthSpaceError
-syn region forthComment start='\\S\s' end='.*' contains=forthTodo,forthSpaceError
-syn match forthComment '\.(\s[^)]*)' contains=forthTodo,forthSpaceError
-syn region forthComment start='\(^\|\s\)\zs(\s' skip='\\)' end=')' contains=forthTodo,forthSpaceError
-syn region forthComment start='/\*' end='\*/' contains=forthTodo,forthSpaceError
+syn match forthComment '\\\s.*$' contains=@Spell,forthTodo,forthSpaceError
+syn region forthComment start='\\S\s' end='.*' contains=@Spell,forthTodo,forthSpaceError
+syn match forthComment '\.(\s[^)]*)' contains=@Spell,forthTodo,forthSpaceError
+syn region forthComment start='\(^\|\s\)\zs(\s' skip='\\)' end=')' contains=@Spell,forthTodo,forthSpaceError
+syn region forthComment start='/\*' end='\*/' contains=@Spell,forthTodo,forthSpaceError
 
 " Include files
 syn match forthInclude '^INCLUDE\s\+\k\+'
