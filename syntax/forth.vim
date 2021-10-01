@@ -98,7 +98,7 @@ syn keyword forthEndOfColonDef ; ;M ;m
 syn keyword forthEndOfClassDef ;class
 syn keyword forthEndOfObjectDef ;object
 syn keyword forthDefine CONSTANT 2CONSTANT FCONSTANT VARIABLE 2VARIABLE
-syn keyword forthDefine FVARIABLE CREATE USER VALUE TO DEFER IS DOES> IMMEDIATE
+syn keyword forthDefine FVARIABLE CREATE USER VALUE TO DEFER IS <BUILDS DOES> IMMEDIATE
 syn keyword forthDefine COMPILE-ONLY COMPILE RESTRICT INTERPRET POSTPONE EXECUTE
 syn keyword forthDefine LITERAL CREATE-INTERPRET/COMPILE INTERPRETATION>
 syn keyword forthDefine <INTERPRETATION COMPILATION> <COMPILATION ] LASTXT
