@@ -105,6 +105,9 @@ syn keyword forthDefine <INTERPRETATION COMPILATION> <COMPILATION ] LASTXT
 syn keyword forthDefine COMP' POSTPONE, FIND-NAME NAME>INT NAME?INT NAME>COMP
 syn keyword forthDefine NAME>STRING STATE C; CVARIABLE BUFFER: MARKER
 syn keyword forthDefine , 2, F, C, COMPILE,
+syn match forthDefine "\[DEFINED]"
+syn match forthDefine "\[UNDEFINED]"
+syn match forthDefine "\[IF]"
 syn match forthDefine "\[IFDEF]"
 syn match forthDefine "\[IFUNDEF]"
 syn match forthDefine "\[THEN]"
