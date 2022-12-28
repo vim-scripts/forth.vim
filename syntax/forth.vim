@@ -200,8 +200,7 @@ syn region forthString start=+s\\\"+ end=+"+ end=+$+ contains=@Spell
 syn region forthString start=+c\"+ end=+"+ end=+$+ contains=@Spell
 
 " Comments
-syn match forthComment '\\\s.*$' contains=@Spell,forthTodo,forthSpaceError
-syn match forthComment '\\\%(\s.*\)\=$' contains=forthTodo,forthSpaceError
+syn match forthComment '\\\%(\s.*\)\=$' contains=@Spell,forthTodo,forthSpaceError
 syn region forthComment start='\\S\s' end='.*' contains=@Spell,forthTodo,forthSpaceError
 syn match forthComment '\.(\s[^)]*)' contains=@Spell,forthTodo,forthSpaceError
 syn region forthComment start='\(^\|\s\)\zs(\s' skip='\\)' end=')' contains=@Spell,forthTodo,forthSpaceError
