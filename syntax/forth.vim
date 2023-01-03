@@ -23,7 +23,6 @@ syn case ignore
 
 " Some special, non-FORTH keywords
 syn keyword forthTodo contained TODO FIXME XXX
-syn match forthTodo contained 'Copyright\(\s([Cc])\)\=\(\s[0-9]\{2,4}\)\='
 
 " Characters allowed in keywords
 " I don't know if 128-255 are allowed in ANS-FORTH
