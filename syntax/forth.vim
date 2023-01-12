@@ -2,7 +2,7 @@
 " Language:    FORTH
 " Current Maintainer:  Johan Kotlinski <kotlinski@gmail.com>
 " Previous Maintainer:  Christian V. J. Br�ssow <cvjb@cvjb.de>
-" Last Change: 2018-03-29
+" Last Change: 2023-01-12
 " Filenames:   *.fs,*.ft
 " URL:	       https://github.com/jkotlinski/forth.vim
 
